@@ -1,0 +1,24 @@
+.table {
+    margin-top: 90px;
+    width: 100%; /* Ensure full width */
+  }
+  
+  .table table {
+    border-collapse: collapse; /* Ensure the table borders behave as expected */
+  }
+  
+  .table .row {
+    color: black;
+    font-size: 18px;
+    padding: 15px;
+    border: 2px black solid;
+    text-align: left; /* Ensure text aligns properly */
+  }
+  
+  .table .inside {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: 1px black solid;
+    text-align: left; /* Ensure text aligns properly */
+  }
+  

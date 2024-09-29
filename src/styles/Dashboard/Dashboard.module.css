@@ -1,0 +1,102 @@
+/* Container Flex Layout */
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  padding: 0; /* Remove any padding */
+  margin: 0; /* Remove any margin */
+}
+
+.details {
+  margin-top: 140px; /* Set margin to 60px */
+  margin-left: 10px;
+  padding: 10px;
+  background-color: #fff;
+  /* border: 1px solid #dd0b0b; Add a border if needed */
+  border-radius: 8px; /* Optional for rounded corners */
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 20%;
+  min-width: 200px;
+  background-color: #f4f4f4;
+  height: 100vh;
+}
+
+/* Hide sidebar on mobile screens */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none; /* Hide sidebar on mobile */
+  }
+  
+  /* Expand the container to fill the space */
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+/* Flexing Content */
+.flexing {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Personal Details Section */
+.details {
+  flex: 1;
+  padding: 10px 20px; /* Adjust padding for content */
+  background-color: #fff;
+  margin: 60px; /* Updated margin */
+  border-radius: 0px;
+  margin-top: 70px;
+  margin-left: 10px;
+}
+
+/* Upcoming Report and Past Prescription - Flexbox container */
+.contentWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 20px 20px;
+  margin-top: 0;
+}
+
+/* Upcoming Report and Past Prescription sections */
+.content1, .content2 {
+  flex: 1;
+  padding: 10px;
+  background-color: #fff;
+  overflow-x: auto;
+  max-height: 300px;
+  margin: 0;
+}
+
+/* Responsive behavior for flex layout */
+@media (max-width: 768px) {
+  /* Stack content1 and content2 on mobile */
+  .contentWrapper {
+    flex-direction: column;
+  }
+
+  /* Ensure full width for each component on mobile */
+  .content1, .content2 {
+    max-width: 100%;
+  }
+
+  /* Stack Personal Details and Upcoming/Past sections */
+  .details {
+    padding: 10px;
+    width: 100%;
+  }
+
+  /* Add some padding to cards on mobile */
+  .content1, .content2, .details {
+    margin-bottom: 20px;
+  }
+}

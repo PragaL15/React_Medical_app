@@ -1,0 +1,17 @@
+.com {
+    display: flex;           /* Enables flexbox for the container */
+    flex-direction: row;     /* Aligns child elements (SideBar and AppTable) in a row */
+    height: 100vh;           /* Ensures the container takes full viewport height */
+  }
+  
+  .SideBar {
+    width: 20%;              /* Gives the sidebar a fixed width (20% of the container width) */
+    min-width: 200px;        /* Minimum width for the sidebar */
+    background-color: #f4f4f4; /* Optional: Sidebar background color for visual distinction */
+  }
+  
+  .AppTable {
+    flex-grow: 1;            /* Takes the remaining space of the container */
+    padding: 20px;           /* Optional: Adds some padding around the AppTable */
+  }
+  

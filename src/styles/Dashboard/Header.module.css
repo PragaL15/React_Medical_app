@@ -1,0 +1,73 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff; /* Adjust background color */
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+  }
+  
+  .greeting h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+  }
+  
+  /* Right section containing search, date, notification, profile */
+  .rightSection {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dateAndNotification {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .date {
+    font-size: 1rem;
+    margin-right: 15px;
+  }
+  
+  .notification {
+    position: relative;
+    font-size: 1.5rem;
+    color: #666;
+  }
+  
+  .notificationBadge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    font-size: 0.8rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+  }
+  
+  .profile {
+    position: relative;
+  }
+  
+  .profileImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Online Status Indicator */
+  .onlineStatus {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border: 2px solid white;
+    border-radius: 50%;
+  }
+  
