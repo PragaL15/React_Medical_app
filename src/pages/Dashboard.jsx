@@ -1,5 +1,5 @@
 import React from 'react';
-import SimpleSidebar from '../components/SideNav'; // Import the SimpleSidebar component
+import SimpleSidebar from '../components/SideNav'; 
 import UpcommingReport from '../components/Dashboard/UpcomingAppoinment';
 import PastPrescription from '../components/Dashboard/PastPrescription';
 import styles from '../styles/Dashboard/Dashboard.module.css';
@@ -13,7 +13,7 @@ export default function Dashboard() {
       <SimpleSidebar className={styles.sidebar} />
 
       <div className={styles.flexing}>
-      <Header/>
+        <Header/>
         <div className={styles.details}>
           <PersonalDetails />
         </div>
@@ -27,7 +27,6 @@ export default function Dashboard() {
         </div>
         <About/>
       </div>
-      
     </div>
   );
 }
