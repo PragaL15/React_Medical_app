@@ -9,7 +9,6 @@ function App() {
         <Route path="/Home" element={<Dashboard />} />
         <Route path="/Appoinmenet" element={<Appoinmenet/>} />
         <Route path="/Note" element={<Note />} />
-        {/* Add other routes for different dashboard components */}
       </Routes>
     </Router>
   );
