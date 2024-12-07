@@ -222,6 +222,7 @@ export function BasicTabs() {
           {archivedNotes.map((note) => (
             <div className="note-item" key={note.id}>
               <h2>{note.title}</h2>
+              
               <p>{note.content}</p>
               <AutorenewIcon onClick={() => revokeArchive(note.id)} />
             </div>
