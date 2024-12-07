@@ -227,6 +227,7 @@ export function BasicTabs() {
             </div>
           ))}
         </div>
+        
       </CustomTabPanel>
 
       <CustomTabPanel value={value} index={2}>
