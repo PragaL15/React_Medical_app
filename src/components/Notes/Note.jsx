@@ -227,12 +227,13 @@ export function BasicTabs() {
             </div>
           ))}
         </div>
-        
+
       </CustomTabPanel>
 
       <CustomTabPanel value={value} index={2}>
         <div>Personal Content</div>
       </CustomTabPanel>
+      
     </Box>
   );
 }
