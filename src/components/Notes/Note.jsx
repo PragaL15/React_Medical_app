@@ -219,9 +219,11 @@ export function BasicTabs() {
 
       <CustomTabPanel value={value} index={1}>
         <div className="notes-grid">
+
           {archivedNotes.map((note) => (
             <div className="note-item" key={note.id}>
               <h2>{note.title}</h2>
+              
               <p>{note.content}</p>
               <AutorenewIcon onClick={() => revokeArchive(note.id)} />
             </div>
@@ -233,7 +235,7 @@ export function BasicTabs() {
       <CustomTabPanel value={value} index={2}>
         <div>Personal Content</div>
       </CustomTabPanel>
-      
+
     </Box>
   );
 }
